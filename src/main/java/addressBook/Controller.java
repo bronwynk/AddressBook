@@ -37,4 +37,9 @@ public class Controller {
         repo.save(book);
         return buddy;
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String start(){
+        return "Hello World";
+    }
 }
